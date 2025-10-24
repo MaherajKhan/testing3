@@ -1,0 +1,15 @@
+Currently 6 different organs that are;
+reg  cell    organ(s)
+1     100    left lung
+2     101    right lung
+3   200 201  heart tissue and blood
+4   300-347  spine and discs
+5     601    brain
+6   604-606  head-face skin
+
+were considered and the reg mesh was used to score the energy deposition in unit of MeV/source.
+This tally unit was used so explicit evaluation of volume can be ignored.
+This was tested against R-Z mesh and the benchmarking is shown in "regmeshbenchmark" folder.
+
+Reg mesh seem to report volume of 1.00 however even after explicit definition of volumes
+NO difference in the tally result in the unit of MeV/source was observed.

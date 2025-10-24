@@ -1,0 +1,14 @@
+all:
+	g++ -O2 -Wall --verbose -Wextra -std=c++11 shieldmat.cpp -o shieldmat.exe
+	gfortran -O2 --verbose main.f90 codegen.f90 -o run.exe
+	g++ -O2 -Wall -Wextra --verbose manlinec.cpp -o manlinec.exe
+	gfortran -O2 --verbose manualentry.f90 -o manualentry.exe
+	g++ -O2 -Wall -Wextra --verbose pointsfind.cpp -o pointsfind.exe
+	gfortran -O2 --verbose sumtally.f90 -o sumtally.exe
+	gfortran -O2 --verbose inputparser.f90 -o inputparser.exe
+clean:
+	rm run.exe
+	rm shieldmat.exe
+	rm pointsfind.exe
+	rm sumtally.exe
+	rm inputparser.exe

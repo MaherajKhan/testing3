@@ -1,0 +1,7 @@
+reg  cell    organ(s)
+1     100    left lung
+2     101    right lung
+3   200 201  heart tissue and blood
+4   300-347  spine and discs
+5     601    brain
+6   604-606  head-face skin
